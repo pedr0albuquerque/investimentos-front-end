@@ -110,7 +110,13 @@ document.querySelector('#editForm').addEventListener('submit', function(event) {
   event.preventDefault();
   const inputEditName = document.querySelector('#editNameInvestment').value;
   const inputEditType = document.querySelector('#editTypeInvestment').value;
-  const inputEditValue = parseFloat(document.querySelector('#editValueInvestment').value.replace(/\./g,''));
+  const formattedInputValue = document.querySelector('#editValueInvestment').value.replace(/\./g,'');
+  const formattedInputValueCurrency = currency(formattedInputValue, {
+    precision: 2,
+    separator: '.',
+    decimal: ','
+  });
+  const inputEditValue = parseFloat(formattedInputValueCurrency.value);
   const inputEditDate = document.querySelector('#editDateInvestment').value;
 
   // Atualiza tabela dinamicamente pelo metodo getInv()
