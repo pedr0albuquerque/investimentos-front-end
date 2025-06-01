@@ -28,7 +28,7 @@ function loadTable(listInvestments) {
         typeInvestment.textContent = investment.typeInvestment;
 
         const valueInvestment = document.createElement('td');
-        valueInvestment.textContent = investment.valueInvestment;
+        valueInvestment.textContent = investment.valueInvestment.replace(/\./g,',');
 
         const dateInvestment = document.createElement('td');
         dateInvestment.textContent = dayjs(investment.dateInvestment).format('DD/MM/YYYY');
@@ -73,7 +73,7 @@ function showFormEdit(investment) {
 
   inputEditName.value = investment.nameInvestment;
   inputEditType.value = investment.typeInvestment;
-  inputEditValue.value = investment.valueInvestment;
+  inputEditValue.value = investment.valueInvestment.replace(/\./g,',');
   inputEditDate.value = investment.dateInvestment;
 
   //Passa o id do investimento para a variável global
