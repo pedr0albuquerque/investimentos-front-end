@@ -29,8 +29,6 @@ function verificateValue(value) {
     const valueFormatted = currency(value, {
         precision: 2
     });
-
-    console.log(valueFormatted.value);
     return valueFormatted.value;
   }
 }

@@ -109,8 +109,8 @@ $(document).ready(function() {
 document.querySelector('#editForm').addEventListener('submit', function(event) {
   event.preventDefault();
   const inputEditName = document.querySelector('#editNameInvestment').value;
-  const inputEditType = document.querySelector('#editTypeInvestment').value;  
-  const inputEditValue = parseFloat(document.querySelector('#editValueInvestment').value);
+  const inputEditType = document.querySelector('#editTypeInvestment').value;
+  const inputEditValue = parseFloat(document.querySelector('#editValueInvestment').value.replace(/\./g,''));
   const inputEditDate = document.querySelector('#editDateInvestment').value;
 
   // Atualiza tabela dinamicamente pelo metodo getInv()
