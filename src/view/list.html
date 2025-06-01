@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Investimentos</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js" defer></script>
+    <script src="https://unpkg.com/currency.js@~2.0.0/dist/currency.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script type="module" src="../public/list.js" defer></script>
+    <link rel="stylesheet" href="../public/style/list.css" />
+  </head>
+  <body>
+    <h1>Investimentos Cadastrados</h1>
+
+    <table id="tableInvestment">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Tipo</th>
+          <th>Valor</th>
+          <th>Data</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+      </tbody>
+    </table>
+
+    <a href="index.html"><button id="btnBack">Voltar</button></a>
+
+    <!-- Formulário de edição, que ficará oculto inicialmente -->
+    <div id="editForm" style="display: none">
+      <h3>Editar Investimento</h3>
+      <form id="formEditInvestment">
+        <input type="hidden" id="editIdInvestment" />
+        <div>
+          <label for="editNameInvestment">Nome do Investimento:</label>
+          <input type="text" id="editNameInvestment"/>
+        </div>
+        <div>
+          <label for="editTypeInvestment">Tipo do Investimento:</label>
+          <input type="text" id="editTypeInvestment" />
+        </div>
+        <div>
+          <label for="editValueInvestment">Valor Investido:</label>
+          <input type="text" id="editValueInvestment" />
+        </div>
+        <div>
+          <label for="editDateInvestment">Data do Investimento:</label>
+          <input type="date" id="editDateInvestment" />
+        </div>
+        <button type="submit" id="btnSave">Salvar</button>
+      </form>
+    </div>
+  </body>
+</html>

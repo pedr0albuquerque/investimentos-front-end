@@ -1,0 +1,105 @@
+/* Resetando margens e fontes básicas */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-color: #0d234b;
+  text-align: center;
+}
+
+/* Estilo para o título */
+h1 {
+  color: #9cb4da;
+  margin-bottom: 20px;
+}
+
+/* Estilo da tabela */
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: #9cb4da;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Estilo do cabeçalho da tabela */
+th {
+  background-color: #0d234b;
+  color: #9cb4da;
+  padding: 10px;
+}
+
+/* Estilo das células */
+td, th {
+  border: 2px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+#btnEdit{
+  background-color: #0d234b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#btnDelete{
+  background-color: #b90a0a;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+} 
+
+#btnBack {
+  background-color: #9cb4da;
+  color: #0d234b;
+  border-radius: 8px;
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  border: none;
+}
+
+#btnSave{
+  background-color: #0d234b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#btnBack:hover {
+  background-color: #0059ff;
+  color: white;
+}
+
+h3{
+  color: #e4e7ec;
+}
+
+#formEditInvestment{
+  background: #9cb4da;
+  width: 50%;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#formEditInvestment > div {
+  display: block;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  text-align: left;
+}
+

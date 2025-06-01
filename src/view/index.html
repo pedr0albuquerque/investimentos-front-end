@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Cadastro</title>
+  <link rel="stylesheet" href="../public/style/index.css">
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js" defer></script>
+  <script src="https://unpkg.com/currency.js@~2.0.0/dist/currency.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+  <script type="module" src="../public/index.js" defer></script>
+</head>
+<body>
+  <h1>Cadastre novos investimentos</h1>
+
+  <form action="#" id="formInvestment">
+    <div id="inputNameInvestment">
+      <label for="nameInvestment">Nome do Investimento:</label>
+      <input type="text" name="name" id="nameInvestment" placeholder="Ex: CDB" required>
+    </div>
+
+    <div id="inputsTypeInvestment">
+      <div class="inputRadio">
+        <label for="radioAcao">Ação</label>
+        <input type="radio" name="typeInvestment" id="radioAcao" value="Ação">
+      </div>
+
+      <div class="inputRadio">
+        <label for="radioFundo">Fundo</label>
+        <input type="radio" name="typeInvestment" id="radioFundo" value="Fundo">
+      </div>
+
+      <div class="inputRadio">
+        <label for="radioTitulo">Título</label>
+        <input type="radio" name="typeInvestment" id="radioTitulo" value="Título">
+      </div>
+    </div>
+
+    <div id="inputValue">
+      <label for="valueInvestment">Valor Investido:</label>
+      <input type="text" name="valueInvestment" id="valueInvestment" placeholder="R$">
+    </div>
+
+    <div id="inputDate">
+      <label for="dateInvestment">Data do Investimento:</label>
+      <input type="date" name="dateInvestment" id="dateInvestment">
+    </div>
+
+    <button type="submit" id="btnSubmit">Cadastrar</button>
+  </form>
+
+  <button id="btnList">Listar</button>
+  
+</body>
+</html>
